@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+    <link rel="stylesheet" href="style/style.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,14 +29,136 @@
       </script>
 </head>
 <body>
-    <header>
-
+    <header> 
+      <nav> 
+      <div class="flex  justify-between bg-secondary pt-2 "> 
+        <button class="btn  glass bg-primary lg:text-2xl ml-2 ">Blog</button>
+        <div class="flex gap-2 items-center">
+             <div>
+                <img class="max-sm:w-6" src="./assets/logo.png" alt="">
+             </div>
+            <p class="lg:text-xl lg:font-bold">Donate Bangladesh</p>
+        </div>
+        <div>
+            <div class=" h-16 w-32   flex gap-2 items-center rounded-lg">
+                <img class="lg:w-9 lg:h-9" src="./assets/coin.png" alt="">
+                 <h2 id="account-balance" class="lg:text-lg lg:font-semibold text-slate-500">5500 BDT</h2>
+              </div>
+        </div>
+    </div>
+    <div class="text-center mt-6 space-x-2    ">
+        <button id="donation-tab"  class="btn bg-primary">Donation</button>
+        <button id="history-tab" class="btn text-gray-500">History</button>
+    </div>
+    <div class="divider"></div>
+  </div>
+</nav>
     </header>
-    <main>
-
+    <main id="donation-page" >
+                <!-- card -1 -->
+                 <section>
+                    <div class="divider"></div>
+                    <div class="card lg:card-side  bg-base-100  shadow-2xl mb-4 ml-4 mr-4 ">
+                        <figure class="lg:ml-3 ">
+                          <img
+                            src="./assets/noakhali.png"
+                            alt="" />
+                        </figure>
+                        <div class="card-body ">
+                            <div  class=" h-16 w-32    flex gap-2 items-center rounded-lg bg-slate-100">
+                                <img class="w-9 h-9" src="./assets/coin.png" alt="">
+                                 <h2 id="balance-amount"  class="text-lg font-semibold text-slate-500"> 20 BDT</h2>
+                              </div>
+                          <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                          <p>Bangladesh is currently facing a devastating flood crisis,<br>
+                             and the district of Noakhali has been hit particularly hard. <br>
+                             Thousands of people have lost their homes, livelihoods, and all sense of security.<br> Families are struggling to survive,
+                              with many left homeless, in debt, and without access to basic necessities.</p>
+  <input id="input-donate-amount" type="text"  placeholder="Write Donation Amount"
+  class="input input-bordered w-full" />
+                          <div class="card-actions justify-center">
+                            <button id="btn-donate" class="btn w-full text-2xl bg-primary ">Donate Now</button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                 </section>
+                 <!-- card -2 -->
+                 <section class="ml-4 mr-4 mb-4 ">
+                   
+                  <div class="card lg:card-side bg-base-100 shadow-2xl  ">
+                      <figure class="lg:ml-3">
+                        <img
+                          src="./assets/feni.png"
+                          alt="" />
+                      </figure>
+                      <div class="card-body">
+                        <div class=" h-16 w-32   flex gap-2 items-center rounded-lg bg-slate-100">
+                          <img class="w-9 h-9" src="./assets/coin.png" alt="">
+                           <h2 id="donate-account-balance" class="text-lg font-semibold text-slate-500">600 BDT</h2>
+                        </div>
+                        <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <p>Bangladesh is currently facing a devastating flood crisis,<br>
+                           and the district of Feni has been hit particularly hard. <br>
+                           Thousands of people have lost their homes, livelihoods, and all sense of security.<br> Families are struggling to survive,
+                            with many left homeless, in debt, and without access to basic necessities.</p>
+                        <input id="input-donation"  type="text" placeholder="Write Donation Amount" class="input input-bordered w-full  " />
+                        <div class="card-actions justify-center">
+                          <button id="btn-donation" class="btn w-full text-2xl bg-primary ">Donate Now</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+               </section> 
+               <!-- card -3 -->
+               <section class="ml-4 mr-4 mb-4 ">
+                   
+                <div class="card lg:card-side bg-base-100 shadow-2xl  ">
+                    <figure class=" lg:ml-3">
+                      <img
+                        src="./assets/quota-protest.png"
+                        alt="" />
+                    </figure>
+                    <div class="card-body">
+                      <div class=" h-16 w-32   flex gap-2 items-center rounded-lg bg-slate-100">
+                        <img class="w-9 h-9" src="./assets/coin.png" alt="">
+                         <h2 id="donation-balance-now" class="text-lg font-semibold text-slate-500">2400 BDT</h2>
+                      </div>
+                      <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+                      <p>There are heartbreaking stories such as the selling of an infant for Tk 37,000 <br> to cover the hospital bills of a father injured during the protests.
+                        <br> Another instance is that of Arif, who was shot during the protests <br>
+                         and had to sell his wife's jewelry to pay for his treatment. <br>
+                         These are just two examples of many untold stories.<br>  When protestors took to the streets, there were many such sacrifices by those who risked their lives for a new Bangladesh.</p>
+                      <input id="input-donation-now" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full  " />
+                      <div class="card-actions justify-center">
+                        <button id="donate-btn-now" class="btn w-full text-2xl bg-primary ">Donate Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+              
+                               
     </main>
+  </section> 
+  <!-- history section -->
+   <section >
+     <div id="history-section"  class="  hidden p-4 rounded-lg shadow-md border border-blue-200">
+       <h3 class="lg:text-xl font-bold text-center mb-4">History Transaction</h3>
+     <div id="history-list" class="grid grid-cols-2 gap-3 ">
+       <p id="formatted-date"></p>
+     </div>
+     </div>
+      
+   </section>
     <footer>
 
     </footer>
+    
+    
+    <script src="js/test.js"></script>
+    <script src="js/donate.js"></script>
+    
+     </script>
+    
 </body>
 </html>
